@@ -149,7 +149,7 @@ html {
 .two {
   width: 60%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .overlay {
     flex-direction: column;
   }
@@ -159,7 +159,7 @@ html {
     width: 100%;
   }
 		.one{
-			height: 30vh;
+			height: 40vh;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
