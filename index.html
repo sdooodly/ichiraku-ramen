@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,64 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Ichiraku Ramen</title>
 </head>
+
 <body>
     <div class="overlay">
         <div class="column one">
-            <div class="logo">fgds</div>
-            <div class="tagline">dfsdf asdsad</div>
+            <img class="logo" src="logo.png" alt="Logo"/ >
+            <span class="popArt">ICHIRAKU RAMEN</span>
+            <div class="tagline">Calling all ramen-loving shinobi! </div>
         </div>
-        <div>
-            <p>dfbdjnfbn</p>
-        </div>
+
         <div class="column two">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <header class='ramen-header'>
+                <h1>ICHIRAKU RAMEN</h1>
+                <p><em>Become a ninja of flavor! Sign up at Ichiraku Ramen and unleash your inner Naruto appetite!</em>
+                </p>
+            </header>
+            <form action="" method="get" class="speaker-form">
+                <div class='form-row'>
+                    <label for='full-name'>Name</label>
+                    <input id='full-name' name='full-name' placeholder="Kakashi Hatake" type='text' />
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class='form-row'>
+                    <label for='email'>Email</label>
+                    <input id='email' name='email' type='email' placeholder='KakashiHatake@konohagakure.com' />
                 </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                <fieldset class='legacy-form-row'>
+                    <legend>Slurp conundrum</legend>
+                    <input id='talk-type-1' name='talk-type' type='radio' value='main-stage' />
+                    <label for='talk-type-1' class='radio-label'>shoyu ramen</label>
+                    <input id='talk-type-2' name='talk-type' type='radio' value='workshop' checked />
+                    <label for='talk-type-2' class='radio-label'>Miso ramen</label>
+                </fieldset>
+                <div class='form-row'>
+                    <label for='t-shirt'>Serving Size</label>
+                    <select id='t-shirt' name='t-shirt'>
+                        <option value='xs'>Mini Ninja Bowl</option>
+                        <option value='s'>Shinobi Standard Bowl</option>
+                        <option value='m'>Hokage's Heroic Bowl</option>
+                        <option value='l'>Naruto-Size Bowl</option>
+                    </select>
                 </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class='form-row'>
+                    <label class='checkbox-label' for='available'>
+                        <input id='available' name='available' type='checkbox' value='is-available' />
+                        <span>Craving a souper subscription?</span>
+                    </label>
                 </div>
-                <button type="submit">Sign Up</button>
+                <div class='form-row'>
+                    <button>Sign up</button>
+                </div>
+                
             </form>
+            <img class="logo" src="naruto-ramen.gif" alt="Logo"/ >
         </div>
-        
-        
-        </div>
+
+       
+
+    </div>
     </div>
 </body>
+
 </html>
